@@ -1,7 +1,17 @@
 # measurewise-privacy
 
-The public, hosted privacy policy for MeasureWise, an offline kitchen
+The public, hosted privacy policy for **Culiquant**, an offline kitchen
 measurement converter app (Android and iOS).
+
+**Note on this repository's name and URL**: this repo (and therefore its
+`github.io/measurewise-privacy/` URL) was created under the product's
+previous name, MeasureWise. The product has since been renamed to
+**Culiquant**. The repository name and URL path are being kept unchanged
+deliberately, since the live URL is already configured in Google Play - only
+the page *content* has been updated to say Culiquant. See the app
+repository's rebrand decision record for the rename rationale. A cleaner,
+Culiquant-named URL is possible as optional future cleanup, but release
+readiness does not depend on it.
 
 This repository contains only the static, self-contained HTML page for that
 policy - no application source code, no build tooling, no dependencies.
@@ -10,7 +20,10 @@ policy - no application source code, no build tooling, no dependencies.
 ## Source of truth
 
 This page is **not** hand-written. It is a mechanical rendering of a single
-canonical source that lives in the main MeasureWise application repository:
+canonical source that lives in the main Culiquant application repository
+(technical repo/directory name: `measurewise`, unchanged from before the
+rebrand - see that repo's own rebrand decision record for why the technical
+identifiers were intentionally left alone):
 
 ```
 src/features/privacy/policyContent.json
@@ -28,7 +41,7 @@ source directly.
 
 ## Updating this page
 
-Do not edit `index.html` by hand. Instead, in the MeasureWise app repository:
+Do not edit `index.html` by hand. Instead, in the Culiquant app repository:
 
 1. Edit `src/features/privacy/policyContent.json`.
 2. Run `node scripts/generate-privacy-policy.js` and `node scripts/generate-privacy-site.js`.
